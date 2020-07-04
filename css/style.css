@@ -1,355 +1,396 @@
-
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins");
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: #353434;
-  font-size: 1.6rem;
-  background-color: #fff;
-  line-height: 1.6;
-  letter-spacing: .08rem;
-  font-weight: 400; }
+    font-family: "Poppins", sans-serif;
+    color: #353434;
+    font-size: 1.6rem;
+    background-color: #fff;
+    line-height: 1.6;
+    letter-spacing: .08rem;
+    font-weight: 400;
+}
 
-  p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #353434;
-  line-height: 1.8;
-  margin: 1rem 0; }
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #353434;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
 
 ul,
 ol {
-  padding: 0;
-  margin: 0; }
+    padding: 0;
+    margin: 0;
+}
 
 li {
-  list-style: none; }
+    list-style: none;
+}
 
 img {
-  width: 100%;
-  height: auto; }
+    width: 100%;
+    height: auto;
+}
 
 a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  outline: none;
-  color: #353434; }
+    text-decoration: none;
+    outline: none;
+    color: #353434;
+}
 
 
 /* --------------------------------------
   3. NAVIGATION
 -----------------------------------------*/
-.navbar {
 
-  position: absolute;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  border: 0;
-  background: transparent;
-  z-index: 100000000;
-  max-height: 80px;
-  font-family: "Poppins", sans-serif;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.6); 
- font-size: 56.25%;}
+.navbar {
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    z-index: 100000000;
+    max-height: 80px;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.6);
+    font-size: 56.25%;
+}
 
 .navbar-brand .logo {
-  width: 70%;
-  height: 70%;
-  margin-left: 2rem; }
+    width: 70%;
+    height: 70%;
+    margin-left: 2rem;
+}
 
 .navbar .icon-bar {
-  color: #ffffff;
-  margin-right: 15px; }
-
+    color: #ffffff;
+    margin-right: 15px;
+}
 
 .navbar-collapse .navbar-nav .nav-link {
-  text-align: center;
-  color: #ffffff;
-  padding: 10px;
-  margin: 1rem;
-  font-weight: 500;
-  letter-spacing: .5px; }
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    margin: 1rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
 
 .nav-scroll {
-  background: #ffffff;
-  transition: background-color .5s ease 0s;
-  position: fixed;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
-  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); }
+    background: #ffffff;
+    transition: background-color .5s ease 0s;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+}
 
 .nav-scroll .icon-bar {
-  color:#ffffff;
-  margin-right: 15px; }
+    color: #ffffff;
+    margin-right: 15px;
+}
 
 .nav-scroll .navbar-nav .active {
-  color: #ffffff !important; }
+    color: #ffffff !important;
+}
 
 .nav-scroll .navbar-nav .nav-link {
-  color: #ffffff;; }
+    color: #ffffff;
+    ;
+}
+
 
 /*------ width < 991px ------*/
-@media (max-width: 991px) {
-  .navbar .navbar-nav .active {
-    color: #ffffff; !important; }
-  .navbar-collapse {
-    background:#000000; } }
 
+@media (max-width: 991px) {
+    .navbar .navbar-nav .active {
+        color: #ffffff;
+        !important;
+    }
+    .navbar-collapse {
+        background: #000000;
+    }
+}
 
 
 /*---------------------------------------
   4. HEADER                
 -----------------------------------------*/
+
+
 /*--------------home------------------*/
+
 .home {
-  padding: 265px 0px 150px ;
-  background: url("../img/hero-bg-03.jpg") no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
+    padding: 265px 0px 150px;
+    background: url("../img/hero-bg-03.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+
 /* About Us padding Class */
+
 .padding {
     padding: 120px 0;
     position: relative;
 }
 
+
 /* --------------------------------------
   6. ABOUT-LIST
 -----------------------------------------*/
+
 .about-list {
-  background: url("../img/about-bg.png") no-repeat center;
-  background-size: cover;
- }
+    background: url("../img/about-bg.png") no-repeat center;
+    background-size: cover;
+}
 
 .about-list .about-item .text-center {
-  margin: .5rem;
-  padding: 30px 30px;
-  background: #fff; }
+    margin: .5rem;
+    padding: 30px 30px;
+    background: #fff;
+}
 
 .about-list .about-item .text-center:hover {
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 3;
-  transition: all .4s; }
-
-
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 3;
+    transition: all .4s;
+}
 
 .about-list .about-item .icon {
-  width: 100px;
-  height: 100px;
-  color: #F7CA18;
-  display: inline-block;
-  font-size: 40px;
-  margin-bottom: 15px;
-  position: relative;
-  background-color: #fff;
-  background: -webkit-gradient(linear, left top, right bottom, from(#96c93d), to(#00b09b));
-  background: linear-gradient(to bottom right, #96c93d, #00b09b);
-  border-radius: 50%;
-  }
-
-
+    width: 100px;
+    height: 100px;
+    color: #F7CA18;
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #fff;
+    background: -webkit-gradient(linear, left top, right bottom, from(#96c93d), to(#00b09b));
+    background: linear-gradient(to bottom right, #96c93d, #00b09b);
+    border-radius: 50%;
+}
 
 .about-list .about-item h5 {
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 10px; }
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
 .about-list .about-item h6 {
-  color: #00b09b;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 20px; }
+    color: #00b09b;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
 
 /*------ width < 991px ------*/
+
 @media (max-width:991px) {
-  .about-list .text-center p {
-    padding: 0 10px;
-  }
+    .about-list .text-center p {
+        padding: 0 10px;
+    }
 }
+
 
 /* --------------------------------------
   8. SERVICES
 -----------------------------------------*/
+
 .services {
-  background: url("../img/service-bg.png") no-repeat center;
-  background-size: cover; }
+    background: url("../img/service-bg.png") no-repeat center;
+    background-size: cover;
+}
 
 .content-box {
-  margin: 25px auto; }
+    margin: 25px auto;
+}
 
 .hr-title .outer-circle {
-  flex-grow: 0; }
+    flex-grow: 0;
+}
 
-.content-box-icon i{
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  font-size: 4rem;
-  text-align: center;
-  color: #353434;
-  position: relative;
-  border-radius: 50%; }
+.content-box-icon i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 4rem;
+    text-align: center;
+    color: #353434;
+    position: relative;
+    border-radius: 50%;
+}
 
 
-
-
-  /* --------------------------------------
+/* --------------------------------------
   11.TEAM
 -----------------------------------------*/
-#team{
-background-color: #00b09b;
-height: 100vh;
+
+#team {
+    background-color: #00b09b;
 }
-.row1{
-	display: flex;
-	justify-content: space-between;
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
 }
+
 .image {
-  display: block;
-  width: inherit;
-  height: auto;
+    display: block;
+    width: inherit;
+    height: auto;
 }
 
 .container1 {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  box-sizing: border-box;
-  justify-content: space-between;
-
- 
-
+    position: relative;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    ;
 }
 
-  .overlay {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #B5B8B4;
-  overflow: hidden;
-  opacity: 0.7;
-  height: 0;
-  transition: .5s ease;
-  margin-left: 10px;
-  margin-right: 10px;
+.overlay {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #B5B8B4;
+    overflow: hidden;
+    opacity: 0.7;
+    height: 0;
+    transition: .5s ease;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
 
 .container1:hover .overlay {
-  height: 100%;
+    height: 100%;
 }
 
 .text1 {
-	display: block;
-	font-size: 21px;
-  font-size: 20px;
-  transform: translate3d(0, -50px, 0);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-weight: bold;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    display: block;
+    font-size: 21px;
+    font-size: 20px;
+    transform: translate3d(0, -50px, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+
 /*------ width < 991px ------*/
+
 @media only screen and (max-width: 991px) {
-  .team .team-info {
-    margin-bottom: 30px; } }
+    .team .team-info {
+        margin-bottom: 30px;
+    }
+}
 
 
 /* --------------------------------------
   14.PROCESS
 -----------------------------------------*/
+
 .process {
-  background: #d8d7d79c; }
+    background: #d8d7d79c;
+    display: block;
+}
 
 .process .p-list {
-  text-align: center;
-  border-radius: 4px;
-  padding: 20px; }
-
-
-.container2{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	z-index: 10000;
-	font-weight: bold;
-	font-size: large;
-	color: #000000;
-	background-color:rgba(255, 255, 255, 0.7);
-	background-size: cover; 
-	width: 50%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-.ready{
-	margin-top: 0;
-	padding-top: 0;
-	padding-bottom: 50px;
-
+    text-align: center;
+    border-radius: 4px;
+    padding: 20px;
 }
 
-.carousel-item{
-	margin-top: 0;
-	padding-top: 0;
+.container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ready {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.carousel-item {
+    margin-top: 0;
+    padding-top: 0;
     height: 95vh;
-} 
-.carousel-item img{
+}
+
+.carousel-item img {
     height: 95vh;
     opacity: 0.7;
 }
 
-@media(max-width:768px){
-.carousel .carousel-inner{
-
-height:auto
- }
+@media(max-width:768px) {
+    .carousel .carousel-inner {
+        height: auto
+    }
 }
+
 
 /* --------------------------------------
   18. CONTACT
 -----------------------------------------*/
+
 .contact {
-	padding-top: 0;
-	margin-top: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: medium;
-  background: url("../img/contact-bg.png") no-repeat center;
-  background-size: cover; }
+    padding-top: 0;
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    background: url("../img/contact-bg.png") no-repeat center;
+    background-size: cover;
+}
 
-
-.footer{
-	font-size: 15px;
-	font-family: "Poppins", sans-serif;
-	background-image: url("../img/portfolio/portfolio-05.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-blend-mode: lighten;
+.footer {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-image: url("../img/portfolio/portfolio-05.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
 }
